@@ -34,7 +34,7 @@ useEffect(() => {
     if (coredomain === 'Technical') {
       return ['All','Web Dev', 'AI/ML', 'App Dev'];
     } else if (coredomain === 'Corporate') {
-      return ['Events', 'Creative', 'Public Relations', 'Sponsorship'];
+      return ['All','Events', 'Creative', 'Public Relations', 'Sponsorship'];
     }
     return [];
   };
@@ -44,7 +44,7 @@ useEffect(() => {
       return ['Secretary', 'Joint Secretary', 'Technical Lead', 'Corporate Lead']
     }
     else if(subdomain === 'All'){
-      return ['Project Lead']
+      return ['Project Lead','Media Lead']
     }
     else{
       return ['Domain Lead', 'Associate Lead', 'Member']
@@ -58,7 +58,6 @@ useEffect(() => {
       alert("Please select an image");
       return;
     }
-
     setLoading(true);
 
     const formData = new FormData();
