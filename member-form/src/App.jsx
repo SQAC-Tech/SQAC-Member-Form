@@ -17,6 +17,18 @@ const App = () => {
   const [pnumber, setPnumber] = useState("");
 
 
+useEffect(() => {
+  const wakeUp = () => {
+    axios.get('https://sqac-member-form.onrender.com/health').catch(() => {});
+  };
+
+  wakeUp(); // wake on load
+
+  const interval = setInterval(wakeUp, 10 * 60 * 1000); // every 10 min
+
+  return () => clearInterval(interval);
+}, []);
+
   const getSubdomainOptions = () => {
     if (coredomain === 'Technical') {
       return ['All','Web Dev', 'AI/ML', 'App Dev'];
