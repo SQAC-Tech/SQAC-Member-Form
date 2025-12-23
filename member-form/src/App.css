@@ -1,7 +1,8 @@
 .card{
   background-color: #12172A;
   border-color: #1E2440;
-  width: 420px;
+  width: 90%;
+  max-width: 420px;
   padding: 32px;
   border: 1px solid;
   box-shadow: 0px 20px 60px rgba(124,58, 237, 0.15);
@@ -9,8 +10,7 @@
   opacity: 85%;
   border-radius: 12px;
   margin-bottom: 50px;
-
-
+  box-sizing: border-box;
 }
 body{
   background-image: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaHxlbnwwfHwwfHx8MA%3D%3D');
@@ -51,9 +51,10 @@ input{
   border-radius: 10px;
   background-color: #0B0F1A;
   border: 1px solid #1E2440;
-  margin: 12px;
+  margin: 12px 0;
    padding : 4px 4px 2px 10px;
-  width: 400px;
+  width: 100%;
+  box-sizing: border-box;
 }
 input:focus{
   border: 1px solid #7C3AED;
@@ -72,9 +73,10 @@ select{
   border-radius: 10px;
   background-color: #0B0F1A;
   border: 1px solid #1E2440;
-  margin: 12px;
+  margin: 12px 0;
   padding: 10px;
-  width: 400px;
+  width: 100%;
+  box-sizing: border-box;
 
 }
 select::placeholder{
@@ -90,5 +92,17 @@ button{
   height: 38px;
   border-radius: 16px;
   background: linear-gradient(to right , #834f2a , #643ca8);
+  width: 100%;
+  box-sizing: border-box;
+  margin: 12px 0;
+}
 
+@media (max-width: 600px) {
+  .card {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
 }
