@@ -2,7 +2,6 @@ import { useState } from "react";
 import axios from "axios";
 import './App.css';
 
-const BASE_URL = import.meta.env.BASE_URL
 const App = () => {
   const [image, setImage] = useState(null);
   const [url, setUrl] = useState("");
@@ -63,7 +62,7 @@ const App = () => {
 
     try {
       const result = await axios.post(
-        `${BASE_URL}/api/form`,
+        'https://sqac-member-form.onrender.com/api/form',
         formData
       );
 
