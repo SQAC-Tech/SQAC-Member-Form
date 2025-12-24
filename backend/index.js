@@ -15,7 +15,9 @@ app.use(express.json())
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://sqac-member-form.vercel.app"
+    "https://sqac-member-form.vercel.app",
+    "https://sqac-website.vercel.app",
+    "https://www.sqac.space"
   ],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
