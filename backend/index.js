@@ -17,7 +17,8 @@ app.use(cors({
     "http://localhost:5173",
     "https://sqac-member-form.vercel.app",
     "https://sqac-website.vercel.app",
-    "https://www.sqac.space"
+    "https://www.sqac.space",
+    "https://sqac-members-details.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
