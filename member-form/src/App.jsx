@@ -31,7 +31,7 @@ const App = () => {
     if (coredomain === "Technical") {
       return ["All", "Web Dev", "AI/ML", "App Dev"];
     } else if (coredomain === "Corporate") {
-      return ["All", "Events", "Creative", "Public Relations", "Sponsorship"];
+      return ["All", "Events", "Media", "Sponsorship"];
     }
     return [];
   };
@@ -43,11 +43,13 @@ const App = () => {
         "Joint Secretary",
         "Technical Lead",
         "Corporate Lead",
+        "Project lead",
+        "Co-Corporate Lead"
       ];
     } else if (subdomain === "All") {
       return ["Project Lead", "Media Lead"];
     } else {
-      return ["Domain Lead", "Associate Lead", "Member"];
+      return ["Domain Lead", "Joint Associate" ,"Associate Lead", "Member"];
     }
   };
 
