@@ -17,7 +17,7 @@ const App = () => {
 
   useEffect(() => {
     const wakeUp = () => {
-      axios.get("https://sqac-member-form.onrender.com/health").catch(() => {});
+      axios.get("https://sqac-member-form-1.onrender.com/health").catch(() => {});
     };
 
     wakeUp(); // wake on load
@@ -74,7 +74,7 @@ const App = () => {
 
     try {
       const result = await axios.post(
-        "https://sqac-member-form.onrender.com/api/form",
+        "https://sqac-member-form-1.onrender.com/api/form",
         formData,
       );
 
