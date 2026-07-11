@@ -13,13 +13,7 @@ const app = express();
 app.use(express.json())
 
 app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "https://sqac-member-form.vercel.app",
-    "https://sqac-website.vercel.app",
-    "https://www.sqac.space",
-    "https://sqac-members-details.vercel.app"
-  ],
+  origin: "*",
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
 }));
